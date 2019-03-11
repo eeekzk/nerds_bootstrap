@@ -1,0 +1,311 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-brand img:hover {
+    opacity: 0.7;
+}
+
+.navbar-brand img:active {
+    opacity: 0.3;
+}
+
+.nav-item-link {
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 550;
+    padding-left: 45px;
+}
+
+.nav-item-link:hover {
+    color: #fb565a;
+    text-decoration: none;
+}
+
+.nav-item-link:active {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.cart-icon svg {
+    opacity: 0.3;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.carousel-item h2 {
+    font-size: 47px;
+    line-height: 55px;
+    font-weight: bold;
+    margin: 50px 0 25px 0;
+}
+
+.carousel-item p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.carousel-item .btn {
+    padding: 19px 55px;
+    background-color: #fb565a;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.carousel-item .btn:hover {
+    background-color: #e74246;
+}
+
+.carousel-item .btn:active {
+    background-color: #d7373b;
+    color: #e48789;
+}
+
+.carousel-indicators li {
+    background: url(img/slider-none.png) no-repeat center center;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background: url(img/slider.png) no-repeat center center;
+}
+
+.card {
+    border-style: none;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 26px 0;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.card-link {
+    padding: 19px 39px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-link-1 {
+    background-color: #fb565a;
+}
+
+.card-link-1:hover {
+    background-color: #e74246;
+    color: #ffffff;
+}
+
+.card-link-1:active {
+    background-color: #d7373b;
+    color: #e48789;
+}
+
+.card-link-2 {
+    background-color: #00ca74;
+}
+
+.card-link-2:hover {
+    background-color: #00bc6c;
+    color: #ffffff;
+}
+
+.card-link-2:active {
+    background-color: #00aa62;
+    color: #74c69c;
+}
+
+.card-link-3 {
+    background-color: #efc84a;
+}
+
+.card-link-3:hover {
+    background-color: #eab534;
+    color: #ffffff;
+}
+
+.card-link-3:active {
+    background-color: #e5a722;
+    color: #edc47f;
+}
+
+.line {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.main-about h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.main-about p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 35px 0;
+}
+
+.list-title {
+    font-weight: bold;
+}
+
+.red-line {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+    padding-left: 30px;    
+}
+
+.list-item::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+	height: 2px;
+    margin-top: 9px;
+	background: #fb565a;
+}
+
+.card-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 35px 0;
+}
+
+.list-number {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px 0; 
+}
+
+.list-percent {
+    font-size: 24px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.list-about {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.logo {
+    opacity: 0.4;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.logo:active {
+    opacity: 0.2;
+}
+
+.map {
+    background: url("img/map.png") 0% 40% no-repeat / cover;
+    width: 100%;
+    height: 420px;
+}
+
+.map-box {
+    padding: 45px 50px;
+    background-color: #ffffff;
+    margin: 55px 0;
+}
+
+.map-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.map-address {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 30px 0 20px 0;
+    color: #666666;
+}
+
+.map-phone {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.map-button {
+    padding: 20px 45px;
+    background-color: #fb565a;
+    color: #ffffff;
+}
+
+.map-button:hover {
+    background-color: #e74246;
+    color: #ffffff;
+}
+
+.map-button:active {
+    background-color: #d7373b;
+    color: #e48789;
+}
+
+.footer {
+    background-color: #ffffff;
+}
+
+.icon-list li {
+    padding: 20px 20px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    fill: #ffffff;
+}
+
+.icon-list li:hover {
+    background-color: #e74246;
+    fill: #ffffff;
+}
+
+.icon-list li:active {
+    background-color: #d7373b;
+    fill: #e37376;
+}
+
+.footer-text h3 {
+    font-size: 36px;
+    font-weight: bold;
+} 
+
+.footer-text p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
+
