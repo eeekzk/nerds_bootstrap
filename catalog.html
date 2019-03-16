@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Nerd's</title>
+  </head>
+  <body>
+    <header>
+        <div class="container" >
+            <nav class="navbar navbar-expand-lg navbar-light d-flex">
+                <a class="navbar-brand d-flex justify-content-around justify-content-xl-start justify-content-lg-center justify-content-md-center justify-content-sm-center" href="#">
+                    <img src="img/nerds-logo.svg" alt="nerds">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-5">
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="index.html">СТУДИЯ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#">КЛИЕНТЫ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-item-active" href="catalog.html">МАГАЗИН</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-item-link" href="#">КОНТАКТЫ</a>
+                        </li>                    
+                        <li class="nav-item cart ml-5">
+                            <a class="nav-item-link cart-icon d-flex justify-content-xl-end" href="#">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve"><g><circle cx="4.5" cy="13.5" r="1.5"/>
+                                <circle cx="12.5" cy="13.5" r="1.5"/><polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/></g></svg>
+                               КОРЗИНА
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="text-center">Магазин готовых шаблонов</h1>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="container">
+            <section class="row justify-content-between">
+                <form class="filter col-xl-3 mt-5" method="get" action="https://echo.htmlacademy.ru/">
+                    <fieldset class="filter-costs">
+                        <legend class="filter-name">СТОИМОСТЬ:</legend>
+                        <div class="filter-range mt-5">
+                            <div class="range-content">
+                                <div class="range-bar">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="range-button range-button-from"></div>
+                                    <div class="range-button range-button-to"></div>
+                                </div>
+                            </div>
+                            <div class="price mt-3">
+                                <label class="min-price">
+                                    ОТ
+                                    <input name="min-price" type="text" value="0">
+                                </label>
+                                <label class="max-price">
+                                    ДО
+                                    <input name="max-price" type="text" value="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter-baseline mt-5">
+                        <legend class="filter-name">СЕТКА:</legend>
+                        <ul class="px-0">
+                            <li class="form-check">
+                                <label class="form-check-label row">
+                                    <input class="form-check-input" type="radio" name="baseline" checked>
+                                    <div class="radio-icon radio-icon-baseline"></div>
+                                    <p class="ml-2">Адаптивная</p>
+                                </label>
+                            </li>
+                            <li class="form-check">
+                                <label class="form-check-label row">
+                                    <input class="form-check-input" type="radio" name="baseline">
+                                    <div class="radio-icon radio-icon-baseline"></div>
+                                    <p class="ml-2">Фиксированная</p>
+                                </label>
+                            </li>
+                            <li class="form-check">
+                                <label class="form-check-label row">
+                                    <input class="form-check-input" type="radio" name="baseline">
+                                    <div class="radio-icon radio-icon-baseline"></div>
+                                    <p class="ml-2">Резиновая</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter-features">
+                        <legend class="filter-name mb-3">ОСОБЕННОСТИ:</legend>
+                        <ul class="px-0">
+                            <li class="filter-option">
+                                <label class="filter-label row">
+                                    <input class="filter-input" type="checkbox" name="slider" checked>
+                                    <div class="checkbox-icon checkbox-icon-features"></div>
+                                    <p class="ml-2 mb-2">Слайдер</p>
+                                </label>
+                            </li>
+                            <li class="filter-option mb-0">
+                                <label class="filter-label row">
+                                    <input class="filter-input" type="checkbox" name="block-features">
+                                    <div class="checkbox-icon checkbox-icon-features"></div>
+                                    <p class="ml-2 mb-2">Блок преимуществ</p>
+                                </label>
+                            </li>
+                            <li class="filter-option mb-0">
+                                <label class="filter-label row">
+                                    <input class="filter-input" type="checkbox" name="news" checked>
+                                    <div class="checkbox-icon checkbox-icon-features"></div>
+                                    <p class="ml-2 mb-2">Новости</p>
+                                </label>
+                            </li>
+                            <li class="filter-option mb-0">
+                                <label class="filter-label row">
+                                    <input class="filter-input" type="checkbox" name="gallery">
+                                    <div class="checkbox-icon checkbox-icon-features"></div>
+                                    <p class="ml-2 mb-2">Галерея</p>
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label class="filter-label row">
+                                    <input class="filter-input" type="checkbox" name="basket">
+                                    <div class="checkbox-icon checkbox-icon-features"></div>
+                                    <p class="ml-2 mb-2">Корзина</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filter-button btn" type="submit">ПОКАЗАТЬ</button>
+                </form>
+
+                <div class="sort col-xl-8 mt-5 px-0">
+                    <div class="sort-bar d-flex mb-5">
+                        <p class="sort-text col-md-6">СОРТИРОВАТЬ:</p>
+                        <ul class="sort-list d-flex row">
+                            <li class="sort-item mr-4"><a class="sort-link sort-link-active" href="#">ПО ЦЕНЕ</a></li>
+                            <li class="sort-item mr-4"><a class="sort-link" href="#">ПО ТИПУ</a></li>
+                            <li class="sort-item"><a class="sort-link" href="#">ПО&nbsp;НАЗВАНИЮ</a></li>
+                        </ul>
+                        <div class="icons d-flex ml-5 mr-3">
+                            <a href="#" class="sort-icon icon-active mr-2">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"><polygon points="5.5,10 0,0 11,0 "/></svg>
+                            </a>
+                            <a href="#" class="sort-icon">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"><polygon points="5.5,0 0,10 11,10 "/></svg>                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog">
+                        <ul class="catalog-list d-flex flex-wrap justify-content-around mx-4 px-0">
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-sedona.jpg" class="" alt="sedona">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">SEDONA</h4>
+                                    <p class="img-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-pink.jpg" class="" alt="pink">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">PINK APP</h4>
+                                    <p class="img-text">Продуктивный лендинг приложений для iOS и Android</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-barbershop.jpg" class="" alt="sedona">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">BARBERSHOP</h4>
+                                    <p class="img-text">Сайт салон красоты. Для мужчин, да.</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-mishka.jpg" class="" alt="pink">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">MISHKA</h4>
+                                    <p class="img-text">Интернет-магазин вязаных игрушек</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-aplus.jpg" class="" alt="sedona">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">A PLUS</h4>
+                                    <p class="img-text">Лендинг курсов повышения квалификации</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                            <li class="catalog-item col-lg-5 col-md-5 px-0 mb-5">
+                                <div class="catalog-header d-flex">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-kvast.jpg" class="" alt="pink">
+                                <div class="img-box text-center">
+                                    <h4 class="img-title">КВАСТ</h4>
+                                    <p class="img-text">Промо-сайт производителя крафтового кваса</p>
+                                    <a href="#" class="img-button btn">9 900 РУБ.</a>
+                                </div>                               
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="map mt-5 mb-5">
+            <div class="container">
+                <div class="row col-xl-4">
+                    <div class="map-box">
+                        <h4 class="map-title">NЁRDS DESIGN STUDIO</h4>
+                        <p class="map-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="map-phone">тел. +7 (812) 275-75-75</p>
+                        <a href="#" class="map-button open-button btn" data-toggle="modal" data-target="#exampleModal">НАПИШИТЕ НАМ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-xl-3 my-3">
+                    <ul class="icon-list d-flex justify-content-between px-0">
+                        <li>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve"><path d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05 c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244 c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515 c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664 c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329 c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789 s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904 C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614 s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312 c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/></svg>
+                        </li>
+                        <li>
+                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve"><path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                           </svg>
+                        </li>
+                        <li>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve"><path d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7 c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5 c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/></svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 footer-text my-3">
+                    <h3>Давайте дружить, это выгодно!</h3>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form class="feedback feedback-form modal-content" action="/feedback" method="post">
+                <div class="d-flex justify-content-between">
+                    <h2 class="mr-3 modal-title">Напишите нам</h2>
+                    <button type="button" class="feedback-close close btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="feedback-data">
+                    <div class="feedback-user d-flex flex-column mr-5 mb-3">
+                        <label class="feedback-text" for="feedback-login">Ваше имя:</label>
+                        <input type="text" name="login" id="feedback-login" placeholder="Имя Фамилия" required>
+                    </div>
+                    <div class="feedback-email d-flex flex-column">
+                        <label class="feedback-text" for="feedback-email">Ваш e-mail:</label>
+                        <input type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+                    </div>
+                </div>
+                <label class="feedback-text d-flex flex-column mt-3 mb-3" for="feedback-textarea">
+                    <p>Текст письма:</p>
+                    <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+                </label>
+                <button type="submit" class="btn feedback-button">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

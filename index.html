@@ -1,14 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
     <title>Nerd's</title>
   </head>
   <body>
@@ -24,13 +21,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-5">
                         <li class="nav-item">
-                            <a class="nav-item-link" href="#">СТУДИЯ</a>
+                            <a class="nav-item-link nav-item-active" href="#">СТУДИЯ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-item-link" href="#">КЛИЕНТЫ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-item-link" href="#">МАГАЗИН</a>
+                            <a class="nav-item-link" href="catalog.html">МАГАЗИН</a>
                         </li>
                         <li class="nav-item mr-5">
                             <a class="nav-item-link" href="#">КОНТАКТЫ</a>
@@ -194,7 +191,7 @@
                         <h4 class="map-title">NЁRDS DESIGN STUDIO</h4>
                         <p class="map-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
                         <p class="map-phone">тел. +7 (812) 275-75-75</p>
-                        <a href="#" class="map-button btn">НАПИШИТЕ НАМ</a>
+                        <a href="#" class="map-button open-button btn" data-toggle="modal" data-target="#exampleModal">НАПИШИТЕ НАМ</a>
                     </div>
                 </div>
             </div>
@@ -225,10 +222,35 @@
             </div>
         </div>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form class="feedback feedback-form modal-content" action="/feedback" method="post">
+                <div class="d-flex justify-content-between">
+                    <h2 class="mr-3 modal-title">Напишите нам</h2>
+                    <button type="button" class="feedback-close close btn" data-dismiss="modal"></button>
+                </div>
+                <div class="feedback-data">
+                    <div class="feedback-user d-flex flex-column mr-5 mb-3">
+                        <label class="feedback-text" for="feedback-login">Ваше имя:</label>
+                        <input type="text" name="login" id="feedback-login" placeholder="Имя Фамилия" required>
+                    </div>
+                    <div class="feedback-email d-flex flex-column">
+                        <label class="feedback-text" for="feedback-email">Ваш e-mail:</label>
+                        <input type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+                    </div>
+                </div>
+                <label class="feedback-text d-flex flex-column mt-3 mb-3" for="feedback-textarea">
+                    <p>Текст письма:</p>
+                    <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+                </label>
+                <button type="submit" class="btn feedback-button">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
